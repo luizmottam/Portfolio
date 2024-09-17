@@ -1,83 +1,85 @@
+/* Import Google Fonts - Inter font with multiple weights */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* Global reset for margin and padding */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box; /* Ensure padding and border are included in width/height */
 }
 
+/* Base body styles */
 body {
   height: 100vh;
-  box-sizing: border-box;
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  font-family: "Segoe UI";
+  background-color: #FAFAFA;
+  font-family: "Inter", sans-serif;
+  font-size: 15pt;
 }
 
+/* Header styling */
 header {
   flex: 1;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+  margin: 26px 0;
 }
 
+/* Navigation bar */
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+}
+
+/* Main content section */
 main {
-  margin: 5%;
-  flex: 8;
+  flex: 7;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  font-size: 16pt;
+  margin: 7% 15%;
 }
 
+/* Introduction section inside the main area */
+.intro-section {
+  width: 530px;
+}
+
+/* Styling for paragraphs inside the intro-section */
+.intro-section p {
+  margin: 1.5rem 0;
+}
+
+/* Image styling */
+img {
+  height: 32.5rem;
+  border-radius: 15px;
+}
+
+/* Footer styling */
 footer {
-  flex: 1;
+  flex: 2;
+  background-color: #D9D9D9;
+  padding: 10px 20px;
+}
+
+/* Contact info styling inside the footer */
+.contact-info {
+  margin-bottom: 1rem;
+}
+
+/* Site info and links inside the footer */
+.site-info {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
 }
 
-img {
-  width: 300px;
-  height: 400px;
-  border-radius: 25px;
-}
-
-.apresentacao {
-  width: 700px;
-}
-
-h1 {
-  font-size: 30pt;
-  padding-bottom: 10px;
-}
-
-strong {
-  color: aqua;
-}
-
-.apresentacao__sobre_mim {
-  font-size: 15pt;
-  padding-bottom: 15px;
-}
-
-.apresentacao__skills {
-  font-size: 15pt;
-  padding-bottom: 15px;
-}
-
-.apresentacao__futuro {
-  font-size: 15pt;
-}
-
-.pages {
-  list-style-type: none;
+.site-links {
   display: flex;
-  justify-content: space-around;
-  width: 100%;
-  color: white;
+  gap: 20px;
 }
 
-.pages a {
+/* Link styling */
+a {
   text-decoration: none;
-  color: inherit;
+  color: black;
 }
