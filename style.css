@@ -36,7 +36,7 @@ main {
   justify-content: space-around;
   align-items: center;
   font-size: 16pt;
-  margin: 7% 15%;
+  margin: 7.5% 15%;
 }
 
 /* Introduction section inside the main area */
@@ -71,15 +71,26 @@ footer {
 .site-info {
   display: flex;
   justify-content: space-between;
+  color: #757575;
+}
+
+.site-info a {
+  color: #757575;
 }
 
 .site-links {
   display: flex;
-  gap: 20px;
+  align-items: center;
+  gap: 15px;
 }
 
 /* Link styling */
 a {
   text-decoration: none;
   color: black;
+}
+
+#linha-vertical {
+  height: 18px;
+  border-right: 2px solid #757575;
 }
