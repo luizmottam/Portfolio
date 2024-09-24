@@ -40,13 +40,17 @@ header {
 /* Main content section */
 main {
   flex: 7;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   font-size: 16pt;
   margin: 7.5% 15%;
 }
 
+
+section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+}
 /* Introduction section inside the main area */
 .intro-section {
   width: 50%;
@@ -101,4 +105,56 @@ a {
 #linha-vertical {
   height: 18px;
   border-right: 2px solid var(--cor-fonte-footer);
+}
+
+
+@media (max-width: 1200px) {
+  section {
+    flex-direction: column-reverse;
+  }
+
+  .intro-section {
+    width: auto;
+  }
+
+  img {
+    width: 55%;
+  }
+
+  .nav-links {
+    gap: 30px;
+    font-size: 16pt;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 400px) {
+  section {
+    flex-direction: column-reverse;
+  }
+
+  .intro-section {
+    width: auto;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .nav-links {
+    gap: 30px;
+    font-size: 15pt;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  .site-info {
+    flex-direction: column;
+    font-size: 12pt;
+  }
 }
