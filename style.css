@@ -9,10 +9,10 @@
 }
 
 :root {
-  --cor-primaria: #fafafa;
-  --cor-secundaria: #d9d9d9;
+  --cor-primaria: #1E201E;
+  --cor-secundaria: #697565;
   --cor-fonte-footer: #757575;
-  --cor-fonte: black;
+  --cor-fonte: #ECDFCC;
 }
 
 /* Base body styles */
